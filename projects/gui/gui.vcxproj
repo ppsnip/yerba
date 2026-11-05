@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{da794ee0-e3a6-49a2-b7d8-97f7b1d56987}</ProjectGuid>
+    <RootNamespace>gui</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../../bin/</OutDir>
+    <IntDir>../../../bin/OBJs/$(ProjectName)</IntDir>
+    <IncludePath>$(SolutionDir)thirdparty\Microsoft DirectX SDK\include;$(SolutionDir)thirdparty\FreeType\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)thirdparty\Microsoft DirectX SDK\Lib\x86;$(SolutionDir)thirdparty\FreeType\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../../bin/</OutDir>
+    <IntDir>../../../bin/OBJs/$(ProjectName)</IntDir>
+    <IncludePath>$(SolutionDir)vendors;$(SolutionDir)thirdparty\Microsoft DirectX SDK\include;$(SolutionDir)thirdparty\FreeType\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)thirdparty\Microsoft DirectX SDK\Lib\x86;$(SolutionDir)thirdparty\FreeType\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../../bin/</OutDir>
+    <IntDir>../../../bin/OBJs/$(ProjectName)</IntDir>
+    <IncludePath>$(SolutionDir)thirdparty\Microsoft DirectX SDK\include;$(SolutionDir)thirdparty\FreeType\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)thirdparty\Microsoft DirectX SDK\Lib\x64;$(SolutionDir)thirdparty\FreeType\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../../bin/</OutDir>
+    <IntDir>../../../bin/OBJs/$(ProjectName)</IntDir>
+    <IncludePath>$(SolutionDir)vendors;$(SolutionDir)thirdparty\Microsoft DirectX SDK\include;$(SolutionDir)thirdparty\FreeType\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)thirdparty\Microsoft DirectX SDK\Lib\x64;$(SolutionDir)thirdparty\FreeType\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;NCONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendors\Dear ImGui;$(SolutionDir)vendors\Dear ImGui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;NCONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendors\Dear ImGui;$(SolutionDir)vendors\Dear ImGui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;NCONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendors\Dear ImGui;$(SolutionDir)vendors\Dear ImGui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;NCONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)vendors\Dear ImGui;$(SolutionDir)vendors\Dear ImGui\backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;freetype.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\vendors\Dear ImGui\addons\imgui_addons.cpp" />
+    <ClCompile Include="..\..\vendors\Dear ImGui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\..\vendors\Dear ImGui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\vendors\Dear ImGui\imgui.cpp" />
+    <ClCompile Include="..\..\vendors\Dear ImGui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\vendors\Dear ImGui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\vendors\Dear ImGui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\vendors\Dear ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\vendors\Dear ImGui\misc\freetype\imgui_freetype.cpp" />
+    <ClCompile Include="CAppWnd.cpp" />
+    <ClCompile Include="CDirectX.cpp" />
+    <ClCompile Include="CGui.cpp" />
+    <ClCompile Include="CTextEditor.cpp" />
+    <ClCompile Include="CTextures.cpp" />
+    <ClCompile Include="LanguageDefinitions.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\resources\fonts\font_cascadia_mono_pl_regular.h" />
+    <ClInclude Include="..\..\resources\fonts\font_exo2_bold.h" />
+    <ClInclude Include="..\..\resources\fonts\font_exo2_medium.h" />
+    <ClInclude Include="..\..\resources\fonts\font_exo2_regular.h" />
+    <ClInclude Include="..\..\resources\fonts\font_inter_bold.h" />
+    <ClInclude Include="..\..\resources\fonts\font_inter_medium.h" />
+    <ClInclude Include="..\..\resources\fonts\font_inter_regular.h" />
+    <ClInclude Include="..\..\resources\fonts\font_inter_semibold.h" />
+    <ClInclude Include="..\..\resources\fonts\font_montserrat_bold.h" />
+    <ClInclude Include="..\..\resources\fonts\font_montserrat_medium.h" />
+    <ClInclude Include="..\..\resources\fonts\font_montserrat_regular.h" />
+    <ClInclude Include="..\..\resources\fonts\font_montserrat_semibold.h" />
+    <ClInclude Include="..\..\resources\fonts\font_poppins_bold.h" />
+    <ClInclude Include="..\..\resources\fonts\font_poppins_light.h" />
+    <ClInclude Include="..\..\resources\fonts\font_poppins_medium.h" />
+    <ClInclude Include="..\..\resources\fonts\font_poppins_regular.h" />
+    <ClInclude Include="..\..\resources\fonts\font_poppins_semibold.h" />
+    <ClInclude Include="..\..\resources\fonts\font_roboto_bold.h" />
+    <ClInclude Include="..\..\resources\fonts\font_roboto_medium.h" />
+    <ClInclude Include="..\..\resources\fonts\font_roboto_regular.h" />
+    <ClInclude Include="..\..\resources\fonts\font_roboto_semibold.h" />
+    <ClInclude Include="..\..\resources\textures\image_clear.h" />
+    <ClInclude Include="..\..\resources\textures\image_copy.h" />
+    <ClInclude Include="..\..\resources\textures\image_cut.h" />
+    <ClInclude Include="..\..\resources\textures\image_download.h" />
+    <ClInclude Include="..\..\resources\textures\image_edit.h" />
+    <ClInclude Include="..\..\resources\textures\image_logo.h" />
+    <ClInclude Include="..\..\resources\textures\image_logo_small.h" />
+    <ClInclude Include="..\..\resources\textures\image_paste.h" />
+    <ClInclude Include="..\..\resources\textures\image_play.h" />
+    <ClInclude Include="..\..\resources\textures\image_plus.h" />
+    <ClInclude Include="..\..\resources\textures\image_redo.h" />
+    <ClInclude Include="..\..\resources\textures\image_save.h" />
+    <ClInclude Include="..\..\resources\textures\image_search.h" />
+    <ClInclude Include="..\..\resources\textures\image_shop.h" />
+    <ClInclude Include="..\..\resources\textures\image_trash.h" />
+    <ClInclude Include="..\..\resources\textures\image_undo.h" />
+    <ClInclude Include="..\..\resources\textures\image_upload.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\addons\imgui_addons.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\addons\imgui_particles.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\imconfig.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\imgui.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\imgui_internal.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\imstb_textedit.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\imstb_truetype.h" />
+    <ClInclude Include="..\..\vendors\Dear ImGui\misc\freetype\imgui_freetype.h" />
+    <ClInclude Include="CAppWnd.h" />
+    <ClInclude Include="CDirectX.h" />
+    <ClInclude Include="CGui.h" />
+    <ClInclude Include="CTextEditor.h" />
+    <ClInclude Include="CTextures.h" />
+    <ClInclude Include="Globals.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
